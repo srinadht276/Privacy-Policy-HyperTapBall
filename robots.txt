@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /app-ads.txt
+Allow: /Privacy-Policy-HyperTapBall/
+Sitemap: https://srinadht276.github.io/sitemap.xml
