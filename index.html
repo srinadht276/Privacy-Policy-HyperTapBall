@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HyperTap Ball Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNDTECH - Apps Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    /* Reset and base styles */
     * {
       margin: 0;
       padding: 0;
@@ -27,7 +26,6 @@
       color: #fff;
     }
 
-    /* Header */
     header {
       width: 100%;
       padding: 20px 40px;
@@ -48,7 +46,6 @@
       font-size: 1rem;
     }
 
-    /* Hero Section */
     .hero {
       text-align: center;
       padding: 80px 20px;
@@ -62,21 +59,20 @@
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 30px;
-      color: #e6eef6;
     }
-    .hero .btn {
+    .btn {
       padding: 12px 30px;
       background: #ffb703;
       color: #071028;
       font-weight: bold;
       border-radius: 8px;
       transition: 0.3s;
+      display: inline-block;
     }
-    .hero .btn:hover {
+    .btn:hover {
       background: #f59e0b;
     }
 
-    /* Sections */
     section {
       padding: 60px 20px;
       max-width: 1200px;
@@ -89,7 +85,6 @@
       text-align: center;
     }
 
-    /* Cards */
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -101,7 +96,7 @@
       background: rgba(255,255,255,0.05);
       padding: 30px;
       border-radius: 12px;
-      width: 250px;
+      width: 260px;
       text-align: center;
       transition: 0.3s;
       box-shadow: 0 8px 30px rgba(2,6,23,0.7);
@@ -115,12 +110,8 @@
       margin-bottom: 10px;
       color: #ffb703;
     }
-    .card p {
-      font-size: 1rem;
-      color: #e6eef6;
-    }
+    .card p { font-size: 1rem; }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -129,117 +120,56 @@
     }
     footer a {
       margin: 0 10px;
-      color: #ffb703;
     }
 
-    /* Responsive */
     @media(max-width: 768px){
-      .cards {
-        flex-direction: column;
-        align-items: center;
-      }
+      .cards { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
-    <h1>HyperTap Ball</h1>
+    <h1>SNDTECH</h1>
     <nav>
+      <a href="#apps">Apps</a>
       <a href="#about">About</a>
-      <a href="https://play.google.com/store/apps/details?id=com.snd.hypertapball">Download</a>
-      <a href="#stats">Stats</a>
-      <a href="#updates">Updates</a>
-      <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to HyperTap Ball!</h2>
-    <p>Experience the ultimate tapping game with exciting challenges and high scores.</p>
-    <a href="#downloads" class="btn">Download Now</a>
+    <h2>Welcome to SNDTECH</h2>
+    <p>Your one place for Android apps created by SNDTECH.</p>
   </section>
 
-  <!-- About Section -->
+  <section id="apps">
+    <h3>Our Apps</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>HyperTap Ball</h4>
+        <p>A fast‑paced tapping game to test your reflexes.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.snd.hypertapball" class="btn">Download</a>
+        <br/><br/>
+        <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a>
+      </div>
+
+      <!-- Add more apps here later -->
+    </div>
+  </section>
+
   <section id="about">
-    <h3>About the Game</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Gameplay</h4>
-        <p>Tap, dodge, and survive! Fast-paced action to challenge your reflexes.</p>
-      </div>
-      <div class="card">
-        <h4>Features</h4>
-        <p>Multiple levels, rewards, leaderboard, and power-ups to keep you hooked.</p>
-      </div>
-      <div class="card">
-        <h4>Community</h4>
-        <p>Join thousands of players worldwide and compete for the top score.</p>
-      </div>
-    </div>
+    <h3>About SNDTECH</h3>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:1.1rem;">SNDTECH is a developer brand focused on building simple, fun, and user‑friendly mobile apps. More apps will be added soon.</p>
   </section>
 
-  <!-- Downloads Section -->
-  <section id="downloads">
-    <h3>Download</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Android</h4>
-        <p>Download the latest APK and start playing today!</p>
-        <a href="https://play.google.com/store/apps/details?id=com.snd.hypertapball" class="btn">Download APK</a>
-      </div>
-      <div class="card">
-        <h4>iOS</h4>
-        <p>Coming soon on the App Store.</p>
-        <a href="#" class="btn">Notify Me</a>
-      </div>
-    </div>
+  <section id="contact">
+    <h3>Contact</h3>
+    <p style="text-align:center;">For support or feedback, contact: <br><br><a href="mailto:sndtechapps@gmail.com">sndtechapps@gmail.com</a></p>
   </section>
 
-  <!-- Stats Section -->
-  <section id="stats">
-    <h3>Game Stats</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Total Players</h4>
-        <p>1,25,000+</p>
-      </div>
-      <div class="card">
-        <h4>Levels</h4>
-        <p>50+</p>
-      </div>
-      <div class="card">
-        <h4>High Score</h4>
-        <p>9999</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Updates Section -->
-  <section id="updates">
-    <h3>Latest Updates</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Version 1.1</h4>
-        <p>New levels, improved graphics, and bug fixes!</p>
-      </div>
-      <div class="card">
-        <h4>Version 1.0</h4>
-        <p>Initial release with 25 challenging levels.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 HyperTap Ball | <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a></p>
-    <p>
-      <a href="#">Facebook</a> |
-      <a href="#">Twitter</a> |
-      <a href="#">Instagram</a>
-    </p>
+    <p>&copy; 2025 SNDTECH</p>
   </footer>
 
 </body>
